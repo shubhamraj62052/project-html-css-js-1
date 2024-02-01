@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+<body>
+    <form action="server.js" method="get">
+        <fieldset>
+            <legend>MY Form</legend>
+    <div>
+        <input type="text" name="na" id="na" placeholder="Enter your name">
+    </div>
+    <div>
+        <input type="email" name="em" id="em" placeholder="Enter your email">
+    </div>
+    <div>
+        <input type="password" name="pas" id="pas" placeholder="Enter your password">
+    </div>
+    <div>
+        <input type="radio" name="gen" id="ma" value="men">
+        <label for="ma">male</label>
+        <input type="radio" name="gen" id="fe" value="women" >
+        <label for="fe">female</label>
+    </div>
+    <div>
+        <P>Select the preffered language</P>
+        <input type="checkbox" name="lang" id="c1" value="Html">
+        <label for="c1">HTml</label>
+        <input type="checkbox" name="lang" id="c2" value="css">
+        <label for="c2">css</label>
+        <input type="checkbox" name="lang" id="c3" value="js">
+        <label for="c3">js</label>
+        <input type="checkbox" name="lang" id="c4" value="react">
+        <label for="c4">react</label>
+    </div>
+    <br>
+    <div>
+        <label for="ran">fluency</label>
+        <input type="range" name="ran" id="ran">
+       
+    </div>
+    <br>
+    <div>
+        <select name="Bike" id="">
+            <option value=""></option>
+
+            <option value="rf">Royal enfield</option> <!--by default the royal enfield is selected so to remove default value we add option value = empty -->
+            <option value="nn">ninja</option>
+       
+            <option value="rr">Apache rr</option>
+        
+            <option value="r15">R15</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <select name="Bike" id="" multiple size="2"> <!-- by selecting multipl tag we can select multiple value if size of multiple is declesr then we can select that no of options-->
+
+            <option value="rf">Royal enfield</option> 
+            <option value="nn">ninja</option>
+       
+            <option value="rr">Apache rr</option>
+        
+            <option value="r15">R15</option>
+        </select>
+    </div>
+    
+    <br>
+    <div>
+        <label for="flower">Choose your flower:</label>
+        <select name="flower" id="flower">
+            <option value="rose">Rose</option>
+            <option value="jasmine">JASMINE</option>
+            <option value="sunflow">Sunflower</option>
+
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="fruit">select the fruit</label>
+        <input type="text" name="fruit" id="fruit" list="mydata"> <!--here we have connect datalist with dat by giving list =something and same datalist id=same as list-->
+        <datalist id="mydata">
+            <option value="apple"></option> <!-- here we use my -->
+            <option value="banana"></option>
+            <option value="grapes"></option>
+            <option value="mango"></option>
+        </datalist>
+    </div>
+    <br>
+    <div>
+        <label for="vc">vehicle</label>
+        <select name="vehicle" id="vc">
+            <optgroup label="Car">
+                <option value=""></option>
+                <option value="bmw">BMW</option>
+                <option value="ferrari">FERRARI</option>
+                <option value="mercedez">MERCEDEZ</option>
+                <option value="lamo">LAMBORGINI</option>
+            </optgroup>
+            <optgroup label="Bike">
+                <option value="Pulsar">Pular</option>
+                <option value="Glamour">Glamour</option>
+                <option value="Dominar">Dominar</option>
+            </optgroup>
+           
+            
+        </select>
+    </div>
+         </fieldset>
+         <input type="submit" value="submit">
+      </form>
+      <form action="server.js" method="get">
+        <fieldset>
+            <legend>MY 2nd Form</legend>
+            <div>
+                <label for="fn">Enter first name: *</label>
+             <input type="text" name="first" id="fn" required> <!--we can validate the form means make it required by putting require in input tag-->
+            </div> <br>
+            <div>
+                <label for="la">Enter last name</label>
+                <input type="text" name="last" value="not changeable" id="la" readonly> <!--readonly means you can write but click it-->
+            </div> <br>
+            <div>
+                <label for="inv">enter invalid name</label>
+                <input type="text" name="invalid" id="inv" disabled> <!--by using disabled we can't able to write also not able to click-->
+            </div>
+            <br>
+            <div>
+                <label for="em">Email address : </label> 
+                <input type="email" name="email" id="em"> 
+            </div> <br>
+            <div>
+                <label for="pas">Enter password</label>
+                <input type="password" name="password" id="pas"  pattern="[A-Za-z]{12}"> <!--it means it consist only 12 letters not any number we can studypattern in detail-->
+            </div> <br>
+            <div>
+                <div>
+                    <label for="ag">Enter your age</label>
+                    <input type="number" name="age" id="ag" minlength="1" maxlength="100"> <!-- min and max length decide the password length-->
+                </div>
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="reset">
+            
+                <input type="submit" value="submitt">
+              </div>
+              <div><p>Note all Fields with * are required</p></div>
+        </fieldset>
+        
+
+      </form>
+
+</body>
+</html>

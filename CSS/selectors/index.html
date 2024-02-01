@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS selectors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Here is my text</h1>
+    <div id="name">
+      <p class="para">para1 with class para</p>
+      <p class="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
+        dignissimos aspernatur in totam saepe quaerat iure dolores. Inventore
+        dolorem praesentium debitis harum consectetur excepturi aliquam a atque
+        architecto quasi libero perspiciatis, rerum eum ex quo officia doloribus
+        doloremque dignissimos, suscipit accusamus distinctio! Velit eos aliquam
+        enim, atque quaerat quasi suscipit.
+      </p>
+      <p>paraghaph without class</p>
+      <div>
+        <p>i am the div inside the another div</p>
+      </div>
+      <p>
+        p after the second div it also selected when div+p is called it meaans
+        immediate after no any element is allowed between
+      </p>
+      <a href="">link here</a>
+    </div>
+    <p>
+      para after div it selected when sibiling is called div+p it meaans
+      immediate after no any element is allowed between
+    </p>
+    <div>
+        <div id="mydiv">
+         <a href="">click me</a>
+        </div>
+        <form action="">
+            <input type="text" id="na" name="name" required>
+            <input type="password" name="passw" id="pass">
+        </form>
+    </div>
+    <div id="main">
+        <div class="child"></div>
+        <div class="child"></div>
+        <p> paragraph</p>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+  </body>
+</html>

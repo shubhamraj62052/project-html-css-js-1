@@ -1,0 +1,22 @@
+*{
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cute Font', sans-serif;
+font-family: 'Poor Story', system-ui;
+font-family: 'Rubik Glitch Pop', system-ui;
+font-family: 'Workbench', sans-serif;           /*font family give in body or with*mark so it is universal apply*/
+}
+h1 {
+    color: aquamarine;
+    font-size: 35px;
+font-weight: bold;
+font-style: italic;
+text-align: center;
+text-decoration: underline;     /* text decoration is used to make text underline dotted oveline so onn generally it is none*/
+}
+   #para
+{
+    background-color: deeppink;
+    color: gold;
+    text-transform: capitalize;   /*it means text is transform into desired text like capital small soo on*/
+    text-overflow: clip;    /* iit means if the text or image is going outof the box then it will remove it */
+}

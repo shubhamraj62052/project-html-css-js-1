@@ -1,0 +1,82 @@
+/* basic selectors */
+p {
+    color: tomato;   /*selecting by the tag name apply to the elements inside that  tags*/
+}
+.para {
+    background-color: aquamarine;    /* selecting by class name apply this to all the elements inside this class .para*/
+}
+#name {
+        border: 2px solid black;  /* selecting by id name apply to the elements have that id */ 
+}
+  /* more selectors */
+  /* Descendent */
+  #name p {
+         font-size: 42px;
+
+  }
+   /* child means only follow parent not grandparent*/
+   #name>p
+   {
+     text-align: center;
+   }
+   
+   div+p   /* it means immediate after div not any tag or element is allowed between them */
+   {
+    font-style: italic;
+   }
+         /* pseudo elements means change the line color first leter and soo onn */
+    .para::first-line
+    {
+        color: blue;
+    }
+   .para::first-letter
+   {
+    font-size: 100px;
+   }
+      /* you can add any attributes after class para by adding after*/
+   .para::after
+   {
+    content: "hello";
+   }
+   #mydiv a:active
+   {
+    background-color: brown;
+    color: yellow;
+   }
+  
+   #mydiv a:link
+   {
+    background-color: darkgreen;
+   }
+   #mydiv a:visited
+   {
+    background-color: cyan;
+   }
+   div a:link {
+      background-color: chocolate;
+   }
+   input:required {
+     background-color: aquamarine;   /*here we can color input element of form by using this we can also color all I/p element by only using I/p not use required*/
+   }
+   #main
+   {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+   }
+   .child
+   {
+    height: 50px;
+    width: 50px;
+    border: 1px solid red;
+   }
+   /* .child:nth-child(2) 
+   {
+      background-color: coral;  
+   } */
+   .child:nth-of-type(3)
+   {
+     background-color: blue;            /*here diff is it color on base of type not index*/
+   }
+
+   

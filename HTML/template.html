@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEMPLATE</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="#banner">Home</a></li>
+        <!--# is reference to the id mentioned any where in code when we click on it it goes to that place where id is same as reference id #-->
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <div id="banner">
+        <!-- <img
+          src="/assets/Shubham pasportsize.jpg"
+          height="200ppx"
+          width="200ppx"
+          alt="banner"
+        /> -->
+        <picture>
+          <source
+            media="(min-width:800px )"
+            srcset="
+              https://i.pinimg.com/564x/f6/c1/45/f6c1452b7da7f202ba6b79ef947409ff.jpg
+            "
+          />
+          <!-- <source
+            media="(min-width:465px )"
+            srcset="
+              https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwxt2262vpC2w-akix7tnbJdYf8xN-Ne7kImOIhwK-aA&s
+            "
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREpEhdrzacj86v2vRpeJlidfs-ro0tq2xUdw&usqp=CAU"
+            alt="Dog images"
+            style="width: auto"
+          /> -->
+          <!--this source tag is used to make image resposive for all like mobile tablets and pc-->
+        </picture>
+      </div>
+      <div>
+        <video width="800px" controls>
+          <source src="/assets/WIN_20231110_19_57_36_Pro.mp4" />
+        </video>
+        <!--another method for insert video-->
+      </div>
+      <div>
+        <audio controls>
+          <source src="/assets/Teri Laal Chunariya - Pawan Singh.mp3" />
+        </audio>
+      </div>
+      <div>
+        <!--if we have to do anything out of the frame means add video docs song from external sites ex youtube vieo add-->
+        <iframe
+          width="500px"
+          height="500px"
+          src="https://www.youtube.com/embed/oYO3_Tbczio?si=WBol6YKgowG3GBEf"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <br /><br />
+        <div>
+          <iframe
+            src="/assets/B_Tech_ ECE Batch 2018 (24-12-2020).pdf"
+            width="800px"
+            height="800px"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+      <div>
+        <marquee behavior="" direction="right">travell</marquee> <!--it is funntag it moves in any direction in screen depend on direction =-->
+      </div>
+      <div id="about">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse placeat
+          rerum, magnam eaque deleniti minima labore neque ipsa minus veritatis,
+          odio laudantium ab quasi fugit! Tenetur doloremque dolore neque
+          reprehenderit sit velit maxime ipsa beatae, nemo unde aut ratione
+          aliquam odio corporis fuga earum, nihil nulla quaerat libero maiores
+          officiis necessitatibus. Ipsa fugit dolorum excepturi obcaecati quam
+          porro facilis quia cupiditate cumque rerum harum qui voluptatibus
+          voluptatum vero doloribus, repellat eaque? Earum provident eos ipsam
+          harum recusandae tenetur pariatur eligendi perferendis delectus
+          blanditiis. Aliquid debitis architecto, quis veritatis illo doloremque
+          et tempora excepturi saepe quibusdam, ea alias, odio distinctio
+          laborum repellendus eveniet non maxime iste? Id reiciendis amet
+          delectus expedita? Pariatur deleniti blanditiis beatae assumenda
+          praesentium dolor, dignissimos cum consectetur omnis neque doloribus
+          quae rerum. Illo maiores, fugit vel illum aperiam quia possimus,
+          reiciendis libero aut atque eligendi obcaecati non id animi, est sequi
+          doloribus? Debitis, doloremque temporibus porro rem rerum inventore
+          illum voluptas? Commodi facere maiores magnam nihil, natus eveniet
+          excepturi cum assumenda voluptate debitis sint sed fugit voluptas
+          veniam possimus saepe. Laborum numquam unde sunt eum aliquam est
+          dignissimos perferendis incidunt nihil aliquid, accusamus illo saepe
+          delectus, dolorum sed ullam voluptates eligendi consectetur maxime
+          accusantium obcaecati fuga? Labore et beatae, totam culpa dolorem nam
+          illum maiores sint soluta, sapiente obcaecati non delectus.
+          Perferendis beatae pariatur asperiores assumenda unde odio, magnam
+          temporibus reiciendis qui voluptate repellat eos odit culpa, deserunt
+          neque omnis sequi in. Harum possimus aliquam, dignissimos fuga commodi
+          facilis nesciunt quaerat magni quibusdam cumque dicta amet veritatis
+          reiciendis optio distinctio odio minima quo accusamus quia fugit
+          blanditiis assumenda recusandae labore maxime? Error eos soluta sed
+          porro libero nam pariatur alias, corporis harum necessitatibus
+          doloribus nemo perspiciatis hic, repellat voluptas, explicabo
+          obcaecati illo cumque odio ipsum voluptate corrupti iusto et. Adipisci
+          cumque corporis ab dolore quos facilis quam.
+        </p>
+      </div>
+      <div id="contact">
+        <form action="server.js">
+          <input
+            type="text"
+            id="fn"
+            placeholder="enter the first name"
+            name="first"
+          />
+          <br />
+          <input
+            type="text"
+            name="last"
+            id="ln"
+            placeholder="enter last name"
+          />
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="em"
+            placeholder="enter email address"
+          />
+          <br />
+          <textarea name="text" id="" cols="30" rows="10">
+Enter something</textarea
+          >
+          <!--textaea is used to write some text in area-->
+          <br />
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        p {
+            background-color: aquamarine;
+            color: blueviolet;
+        }
+    </style>
+    <style>
+        .para
+        {
+            background-color: darkorchid;color: cyan;
+        }
+    </style>
+    <style>
+        #p12{
+            background-color: hotpink;color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        this is the example of of internal css where we use css inside the head
+        tag like if i want to add css in paragraph then we first decleared it in
+        head inside p.it is same for all remaing elements like h1.
+    <p style="background-color: rgb(211, 44, 74);color: cyan;">here we can also declear color specificliy to paragraph
+        by using inline css property which is declearnig css inside the element which is p here.so the priority of
+        <BR>inline is higher above internal css we can declear css by 3 ways one is inline another is internal and also
+        external css.</p>
+    </p>
+    <p class="para">only the letter</p>
+    <p class="para">which comes inside</p>
+    <p class="para">the class para all those are different color as decleared in .para style</p>
+    <p class="para" id="p12">here the class name is also declearedbut the id has more prefence over the class so this paragraph color is changed.</p>
+</body>
+
+</html>

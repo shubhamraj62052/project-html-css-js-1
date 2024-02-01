@@ -1,0 +1,13 @@
+body{
+  /* background-image: url(https://wallpapers.com/blog/wp-content/uploads/2023/06/Web-development-concept-with-person-using-a-laptop-computer.jpeg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat; */
+  /* background: linear-gradient(red 25%,green 25%, blue 25%, yellow);  background color is applied by it also and it is linear gradient so it makes linear pattern  */
+  background: radial-gradient(red,blue,green);
+  height: 100vh; /*the height makes the radial gradien actual radient by fit in the screen it shows actual circle or radial*/
+}
+h1 {
+  background-color: yellow;
+  color: tomato;
+}

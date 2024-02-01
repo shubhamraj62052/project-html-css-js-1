@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+    <link
+      rel="shortcut icon"
+      href="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/online-form-icon.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <h1>FORM</h1>
+    <form action="server.js" method="get">
+      <!--by using method = post the details like name id,pass are hide and method=get it shows all the details in url but get is default we dont have to decleare it.-->
+      <!--action tells where to go to which place like here server.js-->
+      <label for="na">Enter the first name:- </label
+      ><input type="text" id="na" name="name" placeholder="first name" />
+      <!--placeholder is used when we write text inside box by default so by it we don't have to use attributes like lable and Value.-->
+      <!--lable tag is used to describe the user which type of input is inserted and for is used like if we have to add color or anything in text so text id is same as for so we can able to modify text-->
+      <br /><br /><label for="fa">Enter last name:-</label>
+      <input type="text" id="fa" name="last" value="raj" /> <br />
+      <!--value is an attributes which is used when we want to store default value in it already written.-->
+      <br />
+      <!--we add name= something it is attributes which shows its name = what you typed in browser in url it is important because it tells browser hoe to take-->
+      <label for="em">Enter email id:-</label>
+      <input type="email" name="em" id="em" /> <br /><br />
+      <lable for="pas">Enter the password:</lable>
+      <input type="password" name="pasw" id="pas" /> <br />
+      <br />
+      <label for="age">Enter your age:</label>
+      <input type="number" name="age" id="age" /> <br />
+      <br />
+      <!--type age because it takes only number-->
+      <input type="submit" value="click" />
+      <!-- same as submitt button but here it not work or act as submitt because type is not submitt -->
+      <br />
+      <br />
+      <input type="file" name="file" id="file" />
+      <!-- we can insert any file -->
+      <br />
+      <br />
+      <input type="color" name="clr" id="cl" />
+      <!-- we can get color from it-->
+      <br />
+      <br />
+      <input type="date" name="date" id="date" />
+      <!--use to choose date from calender it will come automatically-->
+      <br />
+      <br />
+      <input type="time" name="time" id="time" />
+      <br />
+      <br />
+      <input type="hidden" name="batch" value="4pm" />
+      <!-- it is hidden data which cant view to user it only viwe by owner/server-->
+      <br />
+      <br />
+      <label for="search">search box: </label>
+      <input type="search" name="search" id="search" />
+      <!--use to search-->
+      <br />
+      <br />
+      <label for="url">url: </label>
+      <input type="url" name="url" id="url" />
+      <br />
+      <br />
+      <input type="datetime-local" name="datetime" id="datime" />
+      <!--it is used to add both date and time combinendly-->
+      <br />
+      <br />
+      <input type="button" value="press" />
+      <!-- to submitt the form and submitt is by default attribute-->
+      <br /><br /><button>click here</button>
+      <!--normal button used to submitt the details-->
+      <input type="reset" value="reset" />
+      <!--used to reset the details-->
+    </form>
+    <div>
+      <!--radio buttons we use where we have to select only one option-->
+      <form action="">
+        choose your gender
+        <input type="radio" name="gen" id="m" value="men" />
+        <label for="m">male</label>
+        <input type="radio" name="gen" id="f" value="women" /> <!--use value here because if we submitt it is cannot get at backend what value is radio button storing so we inser value = something -->
+        <!-- here one unique thing name is same in both it becuse radio button have to make connection between them so if we not make connection then all the radio button is able to select at same time its wrong so use same name for make conncection -->
+        <label for="f">female</label>
+        <input type="submit" value="submit">
+      </form>
+      <hr>
+      <!--checkbox is used for multiple selection in radio if name is same then it is connected and takes only one input but name= same but take many inputs so give different name which name = some -->
+     
+    </div>
+    <div>
+        <form action=""> choose
+            <input type="checkbox" name="gend" id="mal" value="men"/>
+            <label for="mal">male</label>
+            <input type="checkbox" name="gend" id="fem" value="woma"/>
+            <label for="fem">female</label>
+            <button>tick</button>
+        </form>
+    </div>
+   
+  </body>
+</html>
