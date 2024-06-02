@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding box model</title>
+    <style>
+      
+      #box {
+        background-color: aquamarine;
+        height: 200px;
+        width: 200px;
+        padding: 20px;
+        margin: 30px;
+        box-sizing: border-box; /* it is use to give a proper size of box use it universal if use it no need to use other things */
+      }
+      #box2 {
+        height: 200px; /*total height = height + top padding + bottom padding + top border + bottom border */
+        width: 300px; /*total width is calculated as width + left padding + right padding + left border + right border */
+        border: 5px solid black;
+        margin: 20px; /* if you can give 50px 20px then it is like first one is top- bottom and left right*/
+        padding: 30px; /*we can also give pading left pading right and so onn it is used to give space inside box same as margin*/
+      }
+      #box3
+      {
+        background-color: yellow;
+        height: 70px;
+        width: 300px;
+        padding: 20px;
+        margin: 30px;
+        box-sizing: border-box;
+      }
+      #float>img
+      {
+        float: right; /*here text is comes just after the img so nxt use float clear to appear text after img*/
+      }
+      #float>p
+      {
+        clear: both;
+      }
+      #display
+      {
+        border: 1px solid black;
+      }
+      #display .child{
+      display: inline-block;
+      
+     }
+    
+      .child
+      {
+        background-color: beige;
+        height: 100px;
+        width: 100px;
+        padding: 40px;
+        margin: 20px;
+        border: 1px solid black;
+       box-sizing: border-box;
+      }
+      
+      #float .child
+      {
+        float: left;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Understanding Box Model.</h1>
+    <div id="box">
+      <p>This is Content inside Box</p>
+    </div>
+    <h2>controlling element dimensions</h2>
+    <div id="box2">
+      <p>this is the larger box with controlled dimensions</p>
+    </div>
+    <h2>Margin and padding shortcuts</h2>
+    <div id="box3">
+      <p>this is the Margin and padding shortcuts</p>
+    </div>
+    <br>
+      <div id="display">
+        <div class="child">hi</div>
+        <div class="child">hi</div>
+        <div class="child">hi</div>
+        <div class="child">hi</div>
+      </div>
+      <div id="float">
+        <div class="child">hello</div>
+        <div class="child">hello</div>
+        <div class="child">hello</div>
+        <div class="child">hello</div>
+      </div>
+    <div id="float">
+      <img
+        src="https://ticketsearch.in/wp-content/uploads/2024/01/maha-shivaratri-2024-tickets.webp"
+        alt="Mahadev"
+        height="100px"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, cum
+        vel nulla iusto fuga aut eos animi fugiat quos asperiores porro earum
+        neque error consequatur soluta praesentium nobis tempore dolor in
+        dolores, eveniet pariatur illum nam id. Quisquam at perspiciatis numquam
+        eligendi incidunt, explicabo possimus alias doloribus maiores, facere
+        esse soluta odio iure, aliquid obcaecati! Ullam non voluptate eaque
+        eveniet sunt accusamus quaerat impedit architecto! Fugiat molestiae cum
+        dicta minima quidem maiores corrupti in at deserunt, provident nisi,
+        illo minus nulla perspiciatis, rerum quibusdam a tempora laudantium
+        natus similique dolorem? Doloremque nobis maxime ea exercitationem
+        consectetur ratione saepe hic laudantium?
+      </p>
+    </div>
+  </body>
+</html>
